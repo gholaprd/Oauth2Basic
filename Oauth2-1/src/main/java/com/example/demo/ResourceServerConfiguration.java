@@ -21,18 +21,14 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 	 .and (). authorizeRequests ()
 	 .antMatchers ("/admin"). access ("hasRole ('ADMIN')");
 	 }
-	@GetMapping(value="public")
-	public String publico() {
-	    return "Public Page";
-	   }
-
-	@GetMapping(value="/private")
-	   public String privates() {
-	          return "Private Page";
-	   }
-	   @GetMapping(value="/admin")
-	   public String admin () {
-	     return "Administrator Page";
-	   }
+	/*
+	 * @GetMapping(value="public") public String publico() { return "Public Page"; }
+	 * 
+	 * @GetMapping(value="/private") public String privates() { return
+	 * "Private Page"; }
+	 * 
+	 * @GetMapping(value="/admin") public String admin () { return
+	 * "Administrator Page"; }
+	 */
 	 
 }
